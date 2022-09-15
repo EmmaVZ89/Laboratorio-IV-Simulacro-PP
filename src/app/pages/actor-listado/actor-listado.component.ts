@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Actor } from 'src/app/clases/actor';
 
 @Component({
   selector: 'app-actor-listado',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./actor-listado.component.scss']
 })
 export class ActorListadoComponent implements OnInit {
+
+  @Input() listadoRecibidoDeActores?: Actor[];
 
   constructor() { }
 

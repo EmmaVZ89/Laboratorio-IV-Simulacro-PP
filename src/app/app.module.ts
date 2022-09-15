@@ -12,6 +12,10 @@ import { PeliculaListadoComponent } from './pages/pelicula-listado/pelicula-list
 import { TablaPeliculaComponent } from './pages/tabla-pelicula/tabla-pelicula.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetallePeliculaComponent } from './pages/detalle-pelicula/detalle-pelicula.component';
+import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { DetallePeliculaComponent } from './pages/detalle-pelicula/detalle-pelic
     ActorListadoComponent,
     PeliculaListadoComponent,
     TablaPeliculaComponent,
-    DetallePeliculaComponent
+    DetallePeliculaComponent,
+    TablaPaisesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,16 +8,16 @@ import { PeliculaAltaComponent } from './pages/pelicula-alta/pelicula-alta.compo
 import { PeliculaListadoComponent } from './pages/pelicula-listado/pelicula-listado.component';
 
 const routes: Routes = [
-  {path:"bienvenido", component: BienvenidaComponent},
-  {path:"", component: BusquedaComponent},
-  {path:"peliculas/alta", component: PeliculaAltaComponent},
-  {path:"actor/alta", component: ActorAltaComponent},
-  {path:"actor/listado", component: ActorListadoComponent},
-  {path:"peliculas/listado", component: PeliculaListadoComponent},
+  { path: 'bienvenido', component: BienvenidaComponent },
+  { path: '', component: BusquedaComponent },
+  { path: 'peliculas/alta', component: PeliculaAltaComponent },
+  { path: 'actor/alta', component: ActorAltaComponent },
+  { path: 'actor/listado', component: ActorListadoComponent },
+  { path: 'peliculas/listado', component: PeliculaListadoComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
