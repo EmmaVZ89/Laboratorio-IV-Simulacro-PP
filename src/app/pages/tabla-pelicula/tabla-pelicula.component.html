@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col" *ngFor="let pelicula of listadoRecibido">
     <img
-      src="{{ pelicula.fotoPelicula }}"
+      [src]="pelicula.fotoPelicula"
       style="width: 150px; display: flex; flex-wrap: wrap"
       alt="foto de la pelicula"
     />

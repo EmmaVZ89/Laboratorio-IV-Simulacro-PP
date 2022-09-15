@@ -9,7 +9,7 @@ import { PeliculaListadoComponent } from './pages/pelicula-listado/pelicula-list
 
 const routes: Routes = [
   {path:"bienvenido", component: BienvenidaComponent},
-  {path:"busqueda", component: BusquedaComponent},
+  {path:"", component: BusquedaComponent},
   {path:"peliculas/alta", component: PeliculaAltaComponent},
   {path:"actor/alta", component: ActorAltaComponent},
   {path:"actor/listado", component: ActorListadoComponent},
