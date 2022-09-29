@@ -21,6 +21,10 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { ActorPeliculaComponent } from './pages/actor-pelicula/actor-pelicula.component';
+import { DetalleActorComponent } from './pages/detalle-actor/detalle-actor.component';
+import { DetallePaisComponent } from './pages/detalle-pais/detalle-pais.component';
+import { ListadoActorPeliculaComponent } from './pages/listado-actor-pelicula/listado-actor-pelicula.component';
 
 
 @NgModule({
@@ -35,7 +39,11 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     TablaPeliculaComponent,
     DetallePeliculaComponent,
     TablaPaisesComponent,
-    NavbarComponent
+    NavbarComponent,
+    ActorPeliculaComponent,
+    DetalleActorComponent,
+    DetallePaisComponent,
+    ListadoActorPeliculaComponent
   ],
   imports: [
     BrowserModule,

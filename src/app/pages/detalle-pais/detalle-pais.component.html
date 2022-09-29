@@ -1,0 +1,16 @@
+<p>Pais: {{ actorRecibido?.nombrePais }}</p>
+<p>Capital: {{ actorRecibido?.pais.capital }}</p>
+<p>Región: {{ actorRecibido?.pais.region }}</p>
+<p>Población: {{ actorRecibido?.pais.population }}</p>
+<img
+  style="
+    width: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  "
+  src="{{ actorRecibido?.banderaPais }}"
+  alt=""
+/>

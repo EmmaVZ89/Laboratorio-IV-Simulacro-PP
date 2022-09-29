@@ -15,9 +15,9 @@
           (PasamosUnPais)="tomarPaisSeleccionado($event)"
         ></app-tabla-paises>
         <br />
-        <small style="color: red" *ngIf="forma.invalid && formEnviado">
+        <!-- <small style="color: red" *ngIf="forma.invalid && formEnviado">
           El país es requerido
-        </small>
+        </small> -->
       </div>
       <div class="col-md-7 col-lg-8">
         <form [formGroup]="forma" (ngSubmit)="agregarActor($event)">
@@ -126,6 +126,41 @@
                 "
               >
                 El sexo es requerido
+              </small>
+            </div>
+            <!-- CONTROL PAIS -->
+            <div class="col-sm-6">
+              <label for="nombrePais" class="form-label">Pais</label>
+              <div style="display: flex">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="nombrePais"
+                  [ngModel]="actorNuevo.nombrePais"
+                  required
+                  readonly
+                />
+                <img
+                  *ngIf="actorNuevo.banderaPais"
+                  style="
+                    margin-left: 1rem;
+                    width: 50px;
+                    height: 50px;
+                    border: 3px solid #000;
+                    border-radius: 50%;
+                  "
+                  src="{{ actorNuevo.banderaPais }}"
+                  alt=""
+                />
+              </div>
+              <small
+                style="color: red"
+                *ngIf="
+                            forma.controls['nombrePais'].errors?.['required'] &&
+                            forma.controls['nombrePais'].touched
+                          "
+              >
+                El pais es requerido
               </small>
             </div>
           </div>

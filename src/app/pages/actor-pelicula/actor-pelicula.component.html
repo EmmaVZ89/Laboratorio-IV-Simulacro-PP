@@ -1,0 +1,40 @@
+<main>
+  <app-navbar></app-navbar>
+  <div class="container py-4 contenedor-gral">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Actores</h1>
+        <app-actor-listado
+          (PasamosUnActor)="tomarActorSeleccionado($event)"
+          [listadoRecibidoDeActores]="listadoActores"
+        ></app-actor-listado>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-4">
+        <div class="h-100 p-5 rounded-3">
+          <h2>Peliculas Actor</h2>
+          <app-listado-actor-pelicula
+            [listadoRecibidoDePeliculas]="listadoAuxPeliculas"
+          >
+          </app-listado-actor-pelicula>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Pais Actor</h2>
+          <app-detalle-pais [actorRecibido]="actorActivo"></app-detalle-pais>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="h-100 p-5 rounded-3">
+          <h2>Detalle Actor</h2>
+          <app-detalle-actor [actorRecibido]="actorActivo"></app-detalle-actor>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">&copy; 2022</footer>
+  </div>
+</main>
