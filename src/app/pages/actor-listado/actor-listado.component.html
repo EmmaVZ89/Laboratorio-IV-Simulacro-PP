@@ -10,16 +10,20 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let actor of listadoRecibidoDeActores">
+    <tr
+      style="cursor: pointer"
+      *ngFor="let actor of listadoRecibidoDeActores"
+      (click)="pasarActor(actor)"
+    >
       <td>{{ actor.nombre }}</td>
       <td>{{ actor.apellido }}</td>
       <td>{{ actor.edad }}</td>
       <td>{{ actor.sexo }}</td>
-      <td>{{ actor.pais }}</td>
+      <td>{{ actor.nombrePais }}</td>
       <td>
         <img
           style="width: 40px; height: 40px; border-radius: 50%"
-          src="{{ actor.fotoPais }}"
+          src="{{ actor.banderaPais }}"
           alt="bandera"
         />
       </td>

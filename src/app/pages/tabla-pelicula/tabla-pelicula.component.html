@@ -1,8 +1,8 @@
-<div class="row">
+<div class="row" style="height: 280px; overflow: scroll">
   <div class="col" *ngFor="let pelicula of listadoRecibido">
     <img
       [src]="pelicula.fotoPelicula"
-      style="width: 150px; display: flex; flex-wrap: wrap"
+      style="width: 150px; height: 200px; display: flex; flex-wrap: wrap"
       alt="foto de la pelicula"
     />
     <button
@@ -14,32 +14,3 @@
     </button>
   </div>
 </div>
-
-<!-- <table class="table table-dark table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#id</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Estreno</th>
-      <th scope="col">Público</th>
-      <th scope="col">Portada</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let pelicula of listadoPeliculas">
-      <td>{{ pelicula.id }}</td>
-      <td>{{ pelicula.nombre }}</td>
-      <td>{{ pelicula.tipo }}</td>
-      <td>{{ pelicula.fechaEstreno }}</td>
-      <td>{{ pelicula.cantidadPublico }}</td>
-      <td>
-        <img
-          src="{{ pelicula.fotoPelicula }}"
-          width="50px"
-          alt="foto de la pelicula"
-        />
-      </td>
-    </tr>
-  </tbody>
-</table> -->

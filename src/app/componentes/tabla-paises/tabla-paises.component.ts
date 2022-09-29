@@ -23,7 +23,6 @@ export class TablaPaisesComponent implements OnInit {
     this.listadoPaises.sort((a: any, b: any) => {
       return a.name.common.localeCompare(b.name.common);
     });
-    // console.log(this.listadoPaises);
   }
 
   pasarPais(pais: any) {

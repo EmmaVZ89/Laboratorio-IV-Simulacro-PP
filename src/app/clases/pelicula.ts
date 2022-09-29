@@ -5,6 +5,7 @@ export class Pelicula {
   fechaEstreno: string;
   cantidadPublico: number;
   fotoPelicula: string;
+  actor: any;
 
   constructor(
     id: number,
@@ -12,7 +13,8 @@ export class Pelicula {
     tipo: string,
     fechaEstreno: string,
     cantidadPublico: number,
-    fotoPelicula: string
+    fotoPelicula: string,
+    actor: any
   ) {
     this.id = id;
     this.nombre = nombre;
@@ -20,5 +22,6 @@ export class Pelicula {
     this.fechaEstreno = fechaEstreno;
     this.cantidadPublico = cantidadPublico;
     this.fotoPelicula = fotoPelicula;
+    this.actor = actor;
   }
 }

@@ -5,7 +5,8 @@ export class Actor {
   edad: string;
   sexo: string;
   pais: string;
-  fotoPais: string;
+  nombrePais: string;
+  banderaPais: string;
 
   constructor(
     id: number,
@@ -14,7 +15,8 @@ export class Actor {
     edad: string,
     sexo: string,
     pais: string,
-    fotoPais: string
+    nombrePais: string,
+    banderaPais: string
   ) {
     this.id = id;
     this.nombre = nombre;
@@ -22,6 +24,7 @@ export class Actor {
     this.edad = edad;
     this.sexo = sexo;
     this.pais = pais;
-    this.fotoPais = fotoPais;
+    this.nombrePais = nombrePais;
+    this.banderaPais = banderaPais;
   }
 }
